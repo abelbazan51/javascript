@@ -68,6 +68,6 @@ switch (uno + dos) {
     break;
 
   default:
-    console.log("ganaste ");
+    console.log("termino el programa  ");
     break;
 }
