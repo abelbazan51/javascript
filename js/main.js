@@ -1,73 +1,50 @@
-//esto es un comentario //
-/*comentario en varias lineas */
-//ES6
-//let numeroUno;
+//let uno = prompt("juguemos a la batalla naval :) cuanto es 2x2 ??");
 
-//numeroUno = 1;
-//numeroUno = "56";
-
-//let nombre = "maxi";
-
-//const PI = 3.141516;
-
-//let nombreUsuario = prompt("ingresa tu nombre");
-
-//alert("hola " + nombreUsuario);
-
-//console.log("hola " + nombreUsuario);
-
-//let nota = prompt("cuanto es 3+3");
-
-//console.log(nota >= 6);
-
-//if (nota == 6) {
-// console.log("bien");
+//if (uno == 4) {
+//console.log("me diste");
+//alert("me diste ");
 //} else {
-//  console.log("falso");
+// console.log("fallaste !! aguaaaa!!!");
+// alert("fallaste !!!aguaaaa!!!");
 //}
 
-//let disparo = prompt("cuanto es 2x2");
-//console.log(nota >= 4);
-//if (disparo == 4) {
-//console.log("correcto");
-//} else {
-// console.log("equibocado");
+//let ingreso = parseInt(prompt("ingresa un numero para ver su tabla numerica "));
+//let limite = parseInt(prompt("por cuanto lo queres multiplicar?"));
+
+//for (let fin = 0; fin < limite; fin = fin + 1) {
+// console.log(
+// "resultado " + ingreso + "x" + fin + " es igual a " + ingreso * fin
+// );
 //}
 
-//let numero = prompt("cuanto es 9+9");
-//console.log(nota <= 18);
-//if (numero == 18) {
-//console.log("correcto");
-//} else {
-//console.log("incorrecto");
-//}
+let repetir = true;
 
-let uno = prompt("juguemos a la batalla naval :) cuanto es 2x2 ??");
+let ingreso = prompt(
+  "seleccione un producto de nuestra lista " +
+    "\nhamburguesas" +
+    "\npancho" +
+    "\npapas" +
+    "\nbebida"
+);
 
-if (uno == 4) {
-  console.log("me diste");
-  alert("me diste ");
-} else {
-  console.log("fallaste !! aguaaaa!!!");
-  alert("fallaste !!!aguaaaa!!!");
-}
+switch (ingreso) {
+  case "hamburguesas":
+    alert("que disfrute de su " + ingreso);
 
-let dos = prompt(" cuanto es 9+9???");
-
-if (dos == 18) {
-  console.log("awwwch me diste ");
-  alert("aaawwchhhh me diste  ");
-} else {
-  console.log("aguaaa!!! alguien no termino la escuela jaja");
-  alert("aguaaa!!! alguien no termino la escuela jaja");
-}
-
-switch (uno + dos) {
-  case 1:
-    console.log("jaja 1? ");
     break;
-
-  default:
-    console.log("termino el programa  ");
+  case "pancho":
+    alert("buen probecho su " + ingreso + " esta listo");
     break;
+  case "papas":
+    alert("grasias ya salen sus " + ingreso);
+
+  case "bebida":
+    alert("su " + ingreso + "bien fria");
+
+    while (ingreso != "SALIR") {
+      console.log("el producto ingresado es " + ingreso);
+      ingreso = prompt(
+        "ingresa otro producto " + " si quiere salir ingrese SALIR"
+      );
+    }
 }
